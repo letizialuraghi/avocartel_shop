@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> I benefici dell'avocado - Avocartel </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/marchiorosso.png">
+    <meta name="keywords" content="avocartel"/>
+    <meta name="author" content="Letizia Luraghi"/>
+    <link rel="stylesheet" type="text/css" href="04_blog_3_articolo.css" title="default" />
+
+    <!--foglio di stile per la ricerca-->
+    <link rel="stylesheet" href="00_cerca.css" /> 
+    <!--codice javascript per la ricerca-->
+    <script src="00_cerca.js"></script>
+    </head>
+
+<header>
+<!--banner-->
+<div class="banner">
+  <div class="logo"> 
+  <a href="01_homepage.html"> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c15b6aaf15dca5fb63fc6de8d9704f34c00a61823835d50905ee405447d2d562?" style=" aspect-ratio: 1.16; object-fit: contain; object-position: left; width: 59px; overflow: hidden; max-width: 100%;"> </a> 
+  </div>
+
+  <div class="collegamenti">
+  <div class="bilancia"> <a href="02_bilancia.html"> LIBRE </a> </div> 
+  <div class="contest"> <a href="03_premi.html"> CONTEST </a> </div>
+  <div class="blog"> <a href=04_blog.html> BLOG </a> </div>
+  <div class="oltre"> <a href="05_oltre.html"> OLTRE </a> </div>
+  <div class="contatti"> <a href="06_about.html"> ABOUT </a> </div>  
+  </div>
+  
+  <div class="bottoni">
+  <!--area personale-->
+  <div class="but1_areapersonale">
+      <button onclick="mostraOverlay()" class="but1_areapersonale"> 
+      </button>
+  </div>
+
+  <div id="overlay"> 
+      <div class="modal-container" id="modal-container"> 
+          <div class="modal active" class="modal" id="modal"> 
+          <!-- la funzione nascondereOverlay è stata attribuita all’evento onclick del bottone con la x della newsletter -->
+          <button onclick="nascondereOverlay()"data-close-button class="close-btn" id="close">&times;</button>
+                  <div class="modal-content">
+                      <form action="">
+                          <input type="text" placeholder="Cerca">
+                          <button class="accedi"></button>
+                      </form>
+                  </div>
+          </div>
+      </div>
+  </div> 
+  </div>
+</div>
+</header>
+
+<body>
+<!--contenuto-->
+<div class="main-container">
+    <div class="article-container">
+      <div class="article-title">
+        <span class="green-text">Le proprietà dell'avocado per pelle e capelli</span>
+      </div>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6eb610392f1ea7487be5aa5eaf7a42eb275068a4c3fee8a518c8eac86b55268?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&" class="article-image" />
+      <div class="article-info">
+        <div class="article-number">N°3</div>
+        <div class="article-date">15 Gennaio 2028 - Sara Chini</div>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cbb1683054f4d0d1b9cef99ab170a66c23cace4dda9fe8310590bdc54154d6a?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&" class="article-icon" />
+      </div>
+    </div>
+  </div>
+
+  <div  class="div" >
+    <span style="font-family: Gabarito, sans-serif;font-weight: 400;">L'avocado è un frutto tropicale che proviene dall'America Latina, ma che è molto usato anche in Occidente sia in ambito culinario che in ambito cosmetico. Questo frutto, dalla forma molto simile alla pera, è povero di zuccheri semplici ma molto ricco di grassi e vitamina E: per questa sua composizione non è presente all'interno della dieta mediterranea, anzi se ne sconsiglia l'assunzione a chi ha problemi di obesità.
+        <br/> Per chi non soffre di questi problemi può essere definito come un super food in quanto ha diverse proprietà benefiche per il nostro organismo.
+        <br/>
+        <br/>
+    </span>
+
+
+    <span style="font: 700 40px/30px Gabarito, sans-serif; line-height: 1.5;"> Proprietà e benefici
+        <br/>
+    </span>
+    <span style="font-family: Gabarito, sans-serif;font-weight: 400;">L'avocado è il frutto con più calorie in assoluto, ne ha ben 240 Kcal per circa 100 grammi, ma nonostante è un alimento dalle mille proprietà. E' una ricca fonte di potassio, calcio, fibre e grassi monoinsaturi, più comunemente noti come 'grassi buoni', che aiutano a combattere il colesterolo e il diabete.        <br/> Privo di lattosio, glutine e colesterolo, è una miniera di acidi grassi ‘buoni’, quali Omega 3, Omega 6 e Omega 9.
+        <br/> Facilita la digestione ed è utile per combattere problemi intestinali, come la dissenteria, ed è un’ottima fonte di vitamine, come A, D, E, K e B. Ultimo, ma non meno importante, l'avocado è ideale per le donne in dolce attesa, in quanto ricco di acido folico, e per i bambini.
+        <br/>
+        <br/>
+    </span>
+
+
+    <span style="font: 700 40px/30px Gabarito, sans-serif; line-height: 1.5;"> L'avocado in ambito cosmetico
+        <br/>
+    </span>
+    <span style="font-family: Gabarito, sans-serif;font-weight: 400;">L'avocado è molto usato anche in ambito cosmetico, perché ricco di nutrienti ottimi per il benessere di pelle e capelli. E', infatti, un frutto idratante, emolliente e riequilibrante, e aiuta a reintegrare il film idrolipidico dell'epidermide. Ideale contro la pelle secca, soprattutto sotto forma di olio o crema viso, l'avocado dona elasticità e tono alla pelle disidratata.
+        <br/> Lo stesso vale per i capelli: questo frutto contribuisce, infatti, a idratare e nutrire in profondità tutta la struttura del capello. E' particolarmente indicato quindi, per chi ha capelli secchi, sfibrati e privi di volume.
+        <br/>
+        <br/>
+    </span>
+
+
+    <span style="font: 700 40px/30px Gabarito, sans-serif; line-height: 1.5;">Come usarlo?
+        <br/>
+    </span>
+    <span style="font-family: Gabarito, sans-serif;font-weight: 400;">In commercio si possono trovare numerosi prodotti a base di avocado, come oli e creme, ma è possibile anche creare delle maschere fai-da-te per capelli
+        <br/>
+        <br/>
+    </span>
+</div>
+
+
+</body>
+
+<!--footer-->
+<footer>
+  <div class="footer">
+      <div class="cookies"> <a href="cookie_policy.html"> COOKIES </a> </div>
+      <div class="privacy_policy"> <a href="privacy_policy.html"> PRIVACY POLICY </a> </div>
+      <div class="condizioni"> <a href="condizioni.html"> CONDIZIONI D’USO</a> <a href="https://www.instagram.com/avocartel_shop/" target=_blank> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9842b4f35005d088ef3d15859f820a844454bc150fb4d453806addb6a13718e9?" alt="instagram"  height="40px" width="40px"> </a> </div>
+  </div>    
+</footer>
+
+</html>

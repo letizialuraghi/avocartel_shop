@@ -1,0 +1,41 @@
+* 
+{
+    box-sizing: content-box} /*box model che fa riferimento all'area di riferimento*/
+
+  .slide1, .slide2 {
+    display: none /*l'elemento viene trattato come se non ci fosse*/
+  }
+
+  img {
+    vertical-align: middle; /*l'immagine è al centro*/
+  }
+
+  .carosello {
+    max-width: 100%;
+    position: relative;
+  }
+
+  /*stile delle frecce per scorrere a destra o a sinistra*/
+  .prec, .succ {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 4%;
+    margin-left: 4%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    transition: 0.1s ease;
+    justify-content: center;
+  }
+
+  .succ {
+    right: 0; /*per posizionarlo a destra*/
+  }
+
+  .prec:hover, .succ:hover {
+  color:  #266b2f;
+  text-decoration: none;
+  } 

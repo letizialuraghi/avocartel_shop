@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*padding e bordi sono considerati come elementi interni al contenitore*/
+}
+
+body{
+    font-family: Gabarito,Helvetica,Arial, sans-serif;
+}
+
+.container{
+    background-position: center;
+    height: 150px;
+}
+
+form {
+    display: flex;
+    gap: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    height: 40%;
+    width: 100%;
+}
+
+/*stile dello sfondo*/
+.modal-container{
+    background-color: rgba(232, 70, 22, 0.2);
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+}
+
+/*stile del contenitore della newsletter*/
+.modal{
+    color: rgb(203, 214, 54);
+    background-color: rgb(38, 107, 47);
+    display: flex;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 30%;
+}
+
+/*posizionamento al centro*/
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content{
+    display: flex; /*gestione flessibile del contenuto*/
+    flex-direction: row; /*contenuto gestito come righe*/
+    font-size: 14px;
+    border: solid 3px rgb(203, 214, 54);
+    border-radius: 10px;
+    width: 80%;
+    height: 30%;
+    margin-left: 6%;
+    margin-top: 9%;
+    align-items: center;
+}
+
+/*stile casella di testo*/
+input[type=text]{
+    align-items: center;
+    outline: none; /*nessun outline quando si scrive*/
+    border-bottom: 2px solid rgba(203, 214, 54, 0.5);
+    border-left: rgb(38, 107, 47);
+    border-top: rgb(38, 107, 47);
+    border-right: rgb(38, 107, 47);
+    width: 90%;
+    height: 30px;
+    background-color: rgb(38, 107, 47);
+    color: rgba(203, 214, 54);
+    font-size: 20px;
+    font-family: Gabarito,Helvetica,Arial, sans-serif;
+}
+
+
+/*stile testo "username" e "password" dentro la casella di testo*/
+::placeholder{
+    color: rgba(203, 214, 54, 0.5);
+    font-family: Gabarito,Helvetica,Arial, sans-serif;
+    font-weight: 50;
+    font-size: 20px;
+}
+
+.accedi{
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+    background-image: url(images/cerca-01-01.png);
+    background-color: rgb(38, 107, 47);
+    outline: none;
+    border: solid 1px rgb(38, 107, 47);
+    width: 40px;
+    height: 40px;
+}
+
+/*stile bottone di chiusura*/
+.close-btn{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    background: none;
+    outline: none;
+    border: 2px solid rgb(38, 107, 47);
+    color: rgb(203, 214, 54);
+    border-radius: 50px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/*elemento overlay*/
+#overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+

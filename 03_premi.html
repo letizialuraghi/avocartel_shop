@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Contest - Avocartel </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/marchiorosso.png">
+    <meta name="keywords" content="avocartel"/>
+    <meta name="author" content="Letizia Luraghi"/>
+    <link rel="stylesheet" type="text/css" href="03_premi.css" title="default" />
+    <!--foglio di stile per la ricerca-->
+    <link rel="stylesheet" href="00_cerca.css" /> 
+    <!--codice javascript per la ricerca-->
+    <script src="00_cerca.js"></script>
+    </head>
+
+<header>
+<!--banner-->
+<div class="banner">
+  <div class="logo"> 
+  <a href="01_homepage.html"> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c15b6aaf15dca5fb63fc6de8d9704f34c00a61823835d50905ee405447d2d562?" style=" aspect-ratio: 1.16; object-fit: contain; object-position: left; width: 59px; overflow: hidden; max-width: 100%;"> </a> 
+  </div>
+
+  <div class="collegamenti">
+  <div class="bilancia"> <a href="02_bilancia.html"> LIBRE </a> </div> 
+  <div class="contest"> <a href="03_premi.html"> CONTEST </a> </div>
+  <div class="blog"> <a href=04_blog.html> BLOG </a> </div>
+  <div class="oltre"> <a href="05_oltre.html"> OLTRE </a> </div>
+  <div class="contatti"> <a href="06_about.html"> ABOUT </a> </div>  
+  </div>
+  
+  <div class="bottoni">
+  <!--area personale-->
+  <div class="but1_areapersonale">
+      <button onclick="mostraOverlay()" class="but1_areapersonale"> 
+      </button>
+  </div>
+
+  <div id="overlay"> 
+      <div class="modal-container" id="modal-container"> 
+          <div class="modal active" class="modal" id="modal"> 
+          <!-- la funzione nascondereOverlay è stata attribuita all’evento onclick del bottone con la x della newsletter -->
+          <button onclick="nascondereOverlay()"data-close-button class="close-btn" id="close">&times;</button>
+                  <div class="modal-content">
+                      <form action="">
+                          <input type="text" placeholder="Cerca">
+                          <button class="accedi"></button>
+                      </form>
+                  </div>
+          </div>
+      </div>
+  </div> 
+  </div>
+</div>
+</header>
+
+
+<body>
+<!--INTRO-->
+<div class="intro">
+  <div class="div-1">
+        <div class="column1">
+          <img loading="lazy" src="Images/interfaccia.png" class="img"/>
+        </div>
+        
+        <div class="column2">
+            <div class="testi">
+              <div class="titololibre">dorado contest 2028</div>
+              <div class="testo1">
+                Con l’arrivo dell’anno nuovo è in arrivo anche un nuovo Contest! Non farti sfuggire questa occasione!
+                Il Dorado contest 2028 si propone come un concorso a premi: l’obiettivo è trovare il bollino dorado, ovvero il bollino che sul retro cela una patina dorata 
+                e un codice: il fortunato che lo troverà potrà vincere un premio esclusivo.
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+<!--SEZIONE 1-->
+<div class="sez1">
+  <div class="testi2">
+        <div class="titoletto1"> la caccia al bollino</div>
+        <div class="testo2">
+          Come funziona la caccia al bollino d'oro?
+          <br/> Ѐ molto semplice:
+        </div>
+  </div>
+</div>
+
+<div class="sez2">
+  <div class="colonne">
+  <!--PASSAGGIO 1-->
+    <div class="column3">
+      <span class="span">
+          <img
+            loading="lazy"
+            srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&"
+            class="img2"
+          />
+          <div class="testo3">
+            Compra
+            <span style="font-weight: 500"> 
+            i tuoi avocado
+            </br>
+            da avocartel </span>
+          </div>
+        </span>
+    </div>
+
+    <!--PASSAGGIO 2-->
+    <div class="column4">
+      <span class="span">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/42b957cf0f95d497928045ef07ba79e3d7bc9288912ef6ca71c455a6391309f4?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&"
+          class="img2"
+        />
+        <div class="testo3">
+          Trova
+          <span style="font-weight: 400">uno dei</span>
+          quattro
+          <br />
+          bollini dorati
+          <span style="font-weight: 400">nascosti</span>
+        </div>
+      </span>
+    </div>
+
+    <!--PASSAGGIO 3-->
+    <div class="column5">
+      <span class="span">
+        <img
+          loading="lazy"
+          src="images/03_borse.png"
+          class="img3"
+        />
+        <div class="testo3">
+          Trova
+          <span style="font-weight: 400">uno dei</span>
+          quattro
+          <br />
+          bollini dorati
+          <span style="font-weight: 400">nascosti</span>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!--SEZIONE 2-->
+<div class="sez3">
+  <div class="sez4">
+      <div class="column6">
+        <img
+          loading="lazy"
+          src="images/giravolta.gif"
+          class="img4"
+        />
+      </div>
+
+      <div class="column7">
+          <div class="titolo_domanda">
+            hai trovato il <span style="color: rgba(231, 66, 24, 1)">bollino dorado</span>?
+          </div>
+
+          <div class="descrizione">
+            Inserisci il <span style="font-weight: 800">codice</span>
+            sulla parte dorata del bollino e la tua <span style="font-weight: 800">email</span>, ti ricontatteremo il prima possibile per la spedizione della tote bag!
+          </div>
+          <div class="form1">
+            <div class="div-7">codice:</div>
+            <div class="div-8"> <input type="text" placeholder="inserisci codice"> </div>
+          </div> 
+
+          <div class="form2">  
+            <div class="div-7">email:</div>
+            <div class="div-8"> <input type="text" placeholder="inserisci email"> </div>
+          </div>
+
+          <div class="bottone1"> <a href="03_premi.html"> INVIA </a> </div>
+      </div>
+  </div>
+</div>
+
+
+</body>
+
+<!--footer-->
+<footer>
+  <div class="footer">
+      <div class="cookies"> <a href="cookie_policy.html"> COOKIES </a> </div>
+      <div class="privacy_policy"> <a href="privacy_policy.html"> PRIVACY POLICY </a> </div>
+      <div class="condizioni"> <a href="condizioni.html"> CONDIZIONI D’USO</a> <a href="https://www.instagram.com/avocartel_shop/" target=_blank> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9842b4f35005d088ef3d15859f820a844454bc150fb4d453806addb6a13718e9?" alt="instagram"  height="40px" width="40px"> </a> </div>
+  </div>    
+</footer>
+
+<html>

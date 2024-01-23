@@ -1,0 +1,252 @@
+/*ELEMENTI PRINCIPALI*/
+body {
+background-color: #ffffff;
+font-family:  Gabarito, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+font-size: 20px;
+overflow-x: hidden;
+width: fit-content;
+}
+
+a:link, a:visited {
+color: rgb(255, 255, 255);
+text-decoration: none; /*eliminazione della sottolineatura*/
+}
+
+a:hover, a:active{
+color: rgb(255, 255, 255);
+text-decoration: underline;
+transition: 1s;
+}
+
+/*banner*/
+.banner {
+background-color: #e84616;
+display: flex;
+max-width: 100vw;
+justify-content: space-between;
+gap: 5%;
+padding: 1% 5%;
+}
+
+.logo {
+object-position: center;
+object-fit: contain; 
+width: 59px; 
+max-width: 100%;
+margin: auto 0;
+}
+
+.collegamenti {
+align-self: center;
+display: flex;
+justify-content: center;
+gap: 25%;
+}
+
+.bilancia {
+color: #fff;
+text-align: center;
+white-space: wrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.contest {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.blog {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+.oltre {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+.contatti {
+color: #fff;
+text-align: center;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.bottoni {
+object-position: right;
+display: flex;
+justify-content: space-between;
+gap: 30px;
+margin: auto 0;
+}
+
+.but1_areapersonale {
+background-image: url(images/cerca-01-01.png);
+background-color: #e84616;
+border: 1px #e84616;
+outline: none;
+justify-content: space-between;
+display: flex;
+gap: 20px;
+margin: auto 0;
+width: 40px;
+height: 40px;
+cursor: pointer;
+}
+
+/*INTRO*/
+.intro {
+  background-color: #266b2f;
+}
+
+.div-1 {
+  gap: 10%;
+  display: flex;
+  padding: 5% 7% 5% 7%;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 45%;
+  margin-left: 0px;
+}
+
+.img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 95%;
+  overflow: hidden;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 45%;
+  margin-left: 20px;
+}
+
+.testi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titololibre {
+  color: #ccd735;
+  font: 800 100px/90% Gabarito, sans-serif;
+}
+
+.testo1 {
+  max-width: 85%;
+  color: #ffffff;
+  font: 22px Gabarito, sans-serif;
+  margin-top: 7%;
+  height: 100%;
+  line-height: 1.4;
+}
+
+/*SEZIONE 1*/
+.sez1 {
+  display: flex;
+  width: 100vw;
+  background: rgba(204, 215, 53, 0.7);
+}
+
+.testi2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  margin-left: 15%;
+}
+
+.titoletto1 {
+  display: flex;
+  color: #266b2f;
+  font: 800 90px/90px Gabarito, sans-serif;
+}
+
+.testo2 {
+  max-width: 60%;
+  color: #266b2f;
+  font: 500 25px/30px Gabarito, sans-serif;
+  margin-top: 7%;
+  height: 100%;
+  line-height: 1.5;
+}
+
+/*SEZIONE 2*/
+.sez2 {
+  display: flex;
+  width: 100vw;
+  background: rgb(255, 255, 255);
+}
+
+.testi3 {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  margin-left: 30%;
+}
+
+.titoletto2 {
+  display: flex;
+  justify-content: flex-end;
+  color: #266b2f;
+  font: 800 90px/90px Gabarito, sans-serif;
+  text-align: right;
+}
+
+.testo3 {
+  justify-content: flex-end;
+  max-width: 60%;
+  color: #266b2f;
+  font: 500 25px/30px Gabarito, sans-serif;
+  margin-top: 7%;
+  margin-left: 40%;
+  height: 100%;
+  line-height: 1.5;
+  text-align: right;
+}
+
+
+
+/*footer*/
+.footer {
+background-color: rgb(232, 70, 22);
+display: flex;
+max-width: 100vw;
+flex-direction: column;
+padding: 2% 5%;
+}
+
+.cookies {
+display: flex;
+color: #fff;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.privacy_policy {
+display: flex; 
+color: #fff;
+margin-top: 1%;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.condizioni {
+display: flex;
+color: #fff;
+margin-top: 1%;
+font: 500 20px/30px Gabarito, sans-serif;
+justify-content: space-between;
+}

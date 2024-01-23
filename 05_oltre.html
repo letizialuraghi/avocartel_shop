@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Bilancia - Avocartel </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/marchiorosso.png">
+    <meta name="keywords" content="avocartel"/>
+    <meta name="author" content="Letizia Luraghi"/>
+    <link rel="stylesheet" type="text/css" href="05_oltre.css" title="default" />
+    <!--foglio di stile per la ricerca-->
+    <link rel="stylesheet" href="00_cerca.css" /> 
+    <!--codice javascript per la ricerca-->
+    <script src="00_cerca.js"></script>
+    <!--codice javascript per il calcolatore-->
+    <script src="05_oltre_calcolatore.js"></script>
+    </head>
+
+<header>
+  <!--banner-->
+  <div class="banner">
+    <div class="logo"> 
+    <a href="01_homepage.html"> 
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c15b6aaf15dca5fb63fc6de8d9704f34c00a61823835d50905ee405447d2d562?" style=" aspect-ratio: 1.16; object-fit: contain; object-position: left; width: 59px; overflow: hidden; max-width: 100%;"> </a> 
+    </div>
+  
+    <div class="collegamenti">
+    <div class="bilancia"> <a href="02_bilancia.html"> LIBRE </a> </div> 
+    <div class="contest"> <a href="03_premi.html"> CONTEST </a> </div>
+    <div class="blog"> <a href=04_blog.html> BLOG </a> </div>
+    <div class="oltre"> <a href="05_oltre.html"> OLTRE </a> </div>
+    <div class="contatti"> <a href="06_about.html"> ABOUT </a> </div>  
+    </div>
+    
+    <div class="bottoni">
+    <!--area personale-->
+    <div class="but1_areapersonale">
+        <button onclick="mostraOverlay()" class="but1_areapersonale"> 
+        </button>
+    </div>
+  
+    <div id="overlay"> 
+        <div class="modal-container" id="modal-container"> 
+            <div class="modal active" class="modal" id="modal"> 
+            <!-- la funzione nascondereOverlay è stata attribuita all’evento onclick del bottone con la x della newsletter -->
+            <button onclick="nascondereOverlay()"data-close-button class="close-btn" id="close">&times;</button>
+                    <div class="modal-content">
+                        <form action="">
+                            <input type="text" placeholder="Cerca">
+                            <button class="accedi"></button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+  </div>
+  </header>
+
+
+
+<body>
+<!--INTRO-->
+<div class="intro">
+  <div class="div-1">
+        <div class="column1">
+          <img loading="lazy" src="Images/interfaccia.png" class="img"/>
+        </div>
+        
+        <div class="column2">
+            <div class="testi">
+              <div class="titololibre">blog</div>
+              <div class="testo1">
+                Qualcuno ha l’acquolina in bocca?
+                Scopri i nostri articoli su come adottare uno stile
+                di vita sano in compagnia dell’avocado Avocartel!
+
+                Nel nostro blog troverai diverse ricette, consigli 
+                su come preparare un’ottima salsa, un toast croccante o un gustoso guacamole.
+                Oltre a deliziosi approcci, esploreremo le
+                implicazioni della produzione di questo frutto 
+                grazie a coinvolgenti articoli.
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="terza_sezione">
+    <div class="div-10">
+      <div class="div-11">
+        <div class="column-5">
+        </div>
+        <div class="column-6">
+          <div class="div-5">
+            E tu, che contributo
+            <br />
+            dai al pianeta?
+          </div>
+            <div class="div-12">
+              L'avocado può essere molto più di un semplice ingrediente nel tuo
+              piatto; può essere una dichiarazione di impegno verso un futuro
+              migliore. Chiediamoci: “Io, che contributo dò al pianeta?&quot; Ogni
+              piccola scelta di consumo può fare la differenza. Scegliere l'avocado
+              in modo consapevole non solo soddisfa il tuo palato,
+              <br />
+              ma anche il tuo desiderio di un mondo più rispettoso.
+              <br />
+              In una società sempre più orientata verso le pari opportunità è
+              fondamentale avere strumenti che ci consentano di monitorare e
+              migliorare il nostro impatto sull'ambiente. Grazie ad Avocartel, hai
+              la possibilità di tenere traccia di tutte le azioni che attui nei
+              confronti del pianeta e dei suoi concittadini.
+            </div>
+        </div>
+      </div>
+    </div> 
+  
+<!--grafico annuale-->
+    <div class="div-34">
+        <div class="div-15">
+          <div class="div-12-2">
+            Qui a fianco si può osservare il grafico che mostra l'andamento dei vari crimini in Michoacan negli ultimi dieci anni.
+            <br />
+            <br />
+            Avete la possibilità, attraverso questa pagina interattiva, di esplorare l'andamento della criminalità in Messico: non vi resta che cliccare su uno degli anni che più vi interessa e nel grafico sotto questo paragrafo
+            vi apparirà un'analisi più dettagliata di ciò con cui avete interagito.
+          </div>
+          <div class="div-32">
+            <div class="div-33">1200k</div>
+            <div class="div-34">1000k</div>
+            <div class="div-35">800k</div>
+            <div class="div-36">600k</div>
+            <div class="div-37">400k</div>
+            <div class="div-38">200k</div>
+            <div class="div-39">0</div>
+          </div>
+            <div class="div-17"></div>
+          <div class="div-14">
+            <img
+            loading="lazy"
+            src="images/totale-13.png"
+            class="grafico"
+          />
+          </div>
+        </div>
+        <div class="div-17-2"></div>
+        <div class="div-mesi-anni">
+          <div class="div-21" id="clickableText1">2019</div>
+          <div class="div-22" id="clickableText2">2020</div>
+          <div class="div-23" id="clickableText3">2021</div>
+          <div class="div-24" id="clickableText4">2022</div>
+          <div class="div-25" id="clickableText5">2023</div>
+          <div class="div-26" id="clickableText6">2024</div>
+          <div class="div-27" id="clickableText7">2025</div>
+          <div class="div-29" id="clickableText8">2026</div>
+          <div class="div-30" id="clickableText9">2027</div>
+          <div class="div-31" id="clickableText10">2028</div>
+        </div>
+
+<!--grafico mensile-->
+        <div class="div-50">
+            <div class="div-32">
+              <div class="div-33">1200k</div>
+              <div class="div-34">1000k</div>
+              <div class="div-35">800k</div>
+              <div class="div-36">600k</div>
+              <div class="div-37">400k</div>
+              <div class="div-38">200k</div>
+              <div class="div-39">0</div>
+            </div>
+            <div class="div-17"></div>
+            <div class="div-14">
+              <img
+              id="imageId"
+              loading="lazy"
+              src=""
+              class="grafico"
+            />
+            </div>
+        </div>
+        <div class="div-12-3">
+          Qui a fianco si può osservare il grafico che mostra l'andamento dei vari crimini in Michoacan negli ultimi dieci anni.
+          <br />
+          <br />
+          Avete la possibilità, attraverso questa pagina interattiva, di esplorare l'andamento della criminalità in Messico: non vi resta che cliccare su uno degli anni che più vi interessa e nel grafico sotto questo paragrafo
+          vi apparirà un'analisi più dettagliata di ciò con cui avete interagito.
+        </div>
+        <div class="div-17-2-2"></div>
+        <div class="div-mesi-anni_2">
+          <div class="gen">Gen</div>
+          <div class="feb">Feb</div>
+          <div class="mar">Mar</div>
+          <div class="apr">Apr</div>
+          <div class="mag">Mag</div>
+          <div class="giu">Giu</div>
+          <div class="lug">Lug</div>
+          <div class="ago">Ago</div>
+          <div class="set">Set</div>
+          <div class="ott">Ott</div>
+          <div class="nov">Nov</div>
+          <div class="dic">Dic</div>
+        </div>
+    </div>
+</div>
+
+
+<!--calcolatore-->
+<div class="calcolatore">
+  <div class="entra_titolo">
+  <span style="color: rgba(38, 107, 47, 1)"> Entra a far parte anche tu della </span>
+  <span style="color: rgba(249, 78, 0, 1)">famiglia</span>
+  <span style="color: rgba(38, 107, 47, 1)">Avocartel!</span>
+  </div>
+
+  <div class="testo_4">
+    Mettiti alla prova e vadi anche tu il costo sociale dei tuioi acquisti. E' molto semplice: inserisci il numero di avocado che hai acquistato recentemente e scopri i crimini che hai commesso!
+  </div>
+
+  <div class="calcolatore_stile" >
+    <div class="column-8">
+      <div class="indicazioni"> Calcola il tuo costo sociale! </div>
+      <div class="indicazioni_2"> Inserisci all'interno del contatore il numero di avocado acuistati l'ultima volta che hai fatto la spesa <br>(si consideri un avocado circa 250g) </div>
+        <div class="startCalculator">
+          <input type="number" id="input" value="">
+          <button class="bottone_2" onclick="startCalculator()"> VAI</button>
+        </div>
+        <div class="indicazioni_3"> Tutti i risultati sono da considerare *10^-3 </div>
+    </div>
+
+  <div class="column-9">
+    <div class="simboli">
+      <div class="div-13">
+        <div class="column-10">
+          <img
+            loading="lazy"
+            src="images/lavoratori sfruttati.png"
+            class="img-4"
+          />
+          <div id="output1"></div>
+        </div>
+        <div class="column-11">
+          <img
+            loading="lazy"
+            src="images/pittogrammi-04.png"
+            class="img-4"
+          />
+          <div id="output2"></div>
+        </div>
+        <div class="column-12">
+          <img
+            loading="lazy"
+            src="images/rapimenti.png"
+            class="img-4"
+          />
+          <div id="output3"></div>
+        </div>
+        <div class="column-13">
+          <img
+            loading="lazy"
+            src="images/omicidi.png"
+            class="img-4"
+          />
+          <div id="output4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--codice javascript per il grafico interattivo-->
+<script src="05_oltre.js"></script>
+
+</body>
+
+<!--footer-->
+<footer>
+  <div class="footer">
+      <div class="cookies"> <a href="cookie_policy.html"> COOKIES </a> </div>
+      <div class="privacy_policy"> <a href="privacy_policy.html"> PRIVACY POLICY </a> </div>
+      <div class="condizioni"> <a href="condizioni.html"> CONDIZIONI D’USO</a> <a href="https://www.instagram.com/avocartel_shop/" target=_blank> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9842b4f35005d088ef3d15859f820a844454bc150fb4d453806addb6a13718e9?" alt="instagram"  height="40px" width="40px"> </a> </div>
+  </div>    
+</footer> 
+
+<html>

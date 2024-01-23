@@ -1,0 +1,167 @@
+/*ELEMENTI PRINCIPALI*/
+body {
+  background-color: #ffffff;
+  font-family:  Gabarito, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 20px;
+  overflow-x: hidden;
+  width: fit-content;
+  }
+
+a:link, a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none; /*eliminazione della sottolineatura*/
+  }
+
+a:hover, a:active{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  transition: 1s;
+  }
+
+/*banner*/
+.banner {
+background-color: #e84616;
+display: flex;
+max-width: 100vw;
+justify-content: space-between;
+gap: 5%;
+padding: 1% 5%;
+}
+
+.logo {
+object-position: center;
+object-fit: contain; 
+width: 59px; 
+max-width: 100%;
+margin: auto 0;
+}
+
+.collegamenti {
+align-self: center;
+display: flex;
+justify-content: center;
+gap: 25%;
+}
+
+.bilancia {
+color: #fff;
+text-align: center;
+white-space: wrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.contest {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.blog {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+.oltre {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+.contatti {
+color: #fff;
+text-align: center;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.bottoni {
+object-position: right;
+display: flex;
+justify-content: space-between;
+gap: 30px;
+margin: auto 0;
+}
+
+.but1_areapersonale {
+background-image: url(images/cerca-01-01.png);
+background-color: #e84616;
+border: 1px #e84616;
+outline: none;
+justify-content: space-between;
+display: flex;
+gap: 20px;
+margin: auto 0;
+width: 40px;
+height: 40px;
+cursor: pointer;
+}
+
+/*TESTO*/
+.generale {
+display: flex;
+flex-direction: column;
+padding: 10% 5%;
+margin-left: 3%;
+margin-right: 10%;
+}
+
+.titolo {
+color: #266b2f;
+font: 800 90px/90px Gabarito, sans-serif;
+padding-right: 20%;
+}
+
+.data {
+color: #266b2f;
+margin-top: 1%;
+margin-bottom: 2%;
+width: 100%;
+font: 800 30px/36px Gabarito, sans-serif;
+}
+
+.testo {
+color: #266b2f;
+width: 100%;
+font: 300 25px/30px Gabarito, sans-serif;
+line-height: 1.3;
+}
+
+.cookie-heading {
+  color: #266b2f;
+  font: 800 30px/36px Gabarito, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1%;
+  }
+
+
+
+/*footer*/
+.footer {
+background-color: rgb(232, 70, 22);
+display: flex;
+max-width: 100vw;
+flex-direction: column;
+padding: 2% 5%;
+}
+
+.cookies {
+display: flex;
+color: #fff;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.privacy_policy {
+display: flex; 
+color: #fff;
+margin-top: 1%;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.condizioni {
+display: flex;
+color: #fff;
+margin-top: 1%;
+font: 500 20px/30px Gabarito, sans-serif;
+justify-content: space-between;
+}

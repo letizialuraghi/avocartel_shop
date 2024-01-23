@@ -1,0 +1,500 @@
+/*ELEMENTI PRINCIPALI*/
+body {
+background-color: #ffffff;
+font-family:  Gabarito, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+font-size: 20px;
+overflow-x: hidden;
+width: fit-content;
+}
+
+a:link, a:visited {
+color: rgb(255, 255, 255);
+text-decoration: none; /*eliminazione della sottolineatura*/
+}
+
+a:hover, a:active{
+color: rgb(255, 255, 255);
+text-decoration: underline;
+transition: 1s;
+}
+
+/*banner*/
+.banner {
+background-color: #e84616;
+display: flex;
+max-width: 100vw;
+justify-content: space-between;
+gap: 5%;
+padding: 1% 5%;
+}
+
+.logo {
+object-position: center;
+object-fit: contain; 
+width: 59px; 
+max-width: 100%;
+margin: auto 0;
+}
+
+.collegamenti {
+align-self: center;
+display: flex;
+justify-content: center;
+gap: 25%;
+}
+
+.bilancia {
+color: #fff;
+text-align: center;
+white-space: wrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.contest {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.blog {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+.oltre {
+color: #fff;
+text-align: center;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+.contatti {
+color: #fff;
+text-align: center;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.bottoni {
+object-position: right;
+display: flex;
+justify-content: space-between;
+gap: 30px;
+margin: auto 0;
+}
+
+.but1_areapersonale {
+background-image: url(images/cerca-01-01.png);
+background-color: #e84616;
+border: 1px #e84616;
+outline: none;
+justify-content: space-between;
+display: flex;
+gap: 20px;
+margin: auto 0;
+width: 40px;
+height: 40px;
+cursor: pointer;
+}
+
+/*INTRO*/
+.intro {
+  background-color: #266b2f;
+}
+
+.div-1 {
+  gap: 10%;
+  display: flex;
+  padding: 5% 7% 5% 7%;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 45%;
+  margin-left: 0px;
+}
+
+.img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 95%;
+  overflow: hidden;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 45%;
+  margin-left: 20px;
+}
+
+.testi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titololibre {
+  color: #ccd735;
+  font: 800 100px/90% Gabarito, sans-serif;
+}
+
+.testo1 {
+  max-width: 85%;
+  color: #ffffff;
+  font: 22px Gabarito, sans-serif;
+  margin-top: 7%;
+  height: 100%;
+  line-height: 1.4;
+}
+
+
+/*RICETTE*/
+.ricette {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 7% 10%;
+}
+.ricette_titolo {
+  color: #266b2f;
+  margin-left: 40px;
+  font: 800 100px/100% Gabarito, sans-serif;
+}
+
+.div-2 {
+  align-self: stretch;
+  margin-top: 73px;
+  width: 100%;
+}
+
+.div-3 {
+  gap: 5%;
+  display: flex;
+}
+
+.column3 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 0px;
+}
+
+.column3 :hover, .column4 :hover, .column5 :hover{
+  background-color: #ccd735;
+  transition: 0.5s ease;
+}
+
+.guacamole {
+  border-radius: 15px;
+  border: 5px solid #266b2f;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 33px 32px;
+}
+
+.img2 {
+  aspect-ratio: 1.09;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.img3 {
+  aspect-ratio: 3.74;
+  object-fit: contain;
+  object-position: center;
+  width: 116px;
+  overflow: hidden;
+  align-self: start;
+  margin-top: 22px;
+  max-width: 100%;
+}
+
+.titoletto1 a{
+  color: #266b2f;
+  align-self: stretch;
+  margin-top: 13px;
+  font: 600 25px/35px Gabarito, sans-serif;
+  text-decoration: none;
+}
+
+.durata1 {
+  color: #e84616;
+  align-self: stretch;
+  margin-top: 85px;
+  white-space: nowrap;
+  font: 400 20px/145% Gabarito, sans-serif;
+}
+
+.column4 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+}
+
+.gamberi {
+  border-radius: 15px;
+  border: 5px solid #266b2f;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 33px 32px;
+}
+
+.img4 {
+  aspect-ratio: 1.87;
+  object-fit: contain;
+  object-position: center;
+  width: 58px;
+  overflow: hidden;
+  align-self: start;
+  margin-top: 22px;
+  max-width: 100%;
+}
+.titoletto2 a{
+  color: #266b2f;
+  align-self: stretch;
+  margin-top: 12px;
+  font: 600 25px/35px Gabarito, sans-serif;
+  text-decoration: none;
+}
+.durata2 {
+  color: #e84616;
+  align-self: stretch;
+  margin-top: 85px;
+  white-space: nowrap;
+  font: 400 20px/145% Gabarito, sans-serif;
+}
+
+.column5 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+}
+
+.maionese {
+  border-radius: 15px;
+  border: 5px solid #266b2f;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 33px 32px;
+}
+
+.img5 {
+  aspect-ratio: 1.87;
+  scale: 1.5;
+  object-fit: contain;
+  object-position: center;
+  width: 58px;
+  overflow: hidden;
+  align-self: start;
+  margin-top: 22px;
+  margin-left: 15px;
+  max-width: 100%;
+}
+.titoletto3 a{
+  color: #266b2f;
+  align-self: stretch;
+  margin-top: 12px;
+  font: 600 25px/35px Gabarito, sans-serif;
+  text-decoration: none;
+}
+.durata3 {
+  color: #e84616;
+  align-self: stretch;
+  margin-top: 85px;
+  white-space: nowrap;
+  font: 400 20px/145% Gabarito, sans-serif;
+}
+
+  
+/*ARTICOLI*/
+.articoli {
+  display: flex;
+  background-color: rgba(204, 215, 53, 0.7);
+  flex-direction: column;
+  align-items: start;
+  padding: 7% 10%;
+}
+
+.articoli_titolo {
+  color: #266b2f;
+  margin-left: 57vw;
+  font: 800 100px/100% Gabarito, sans-serif;
+}
+
+.div-4 {
+  align-self: stretch;
+  width: 100%;
+}
+
+.div-5 {
+  gap: 5%;
+  display: flex;
+}
+
+.column6 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 0px;
+}
+
+.column6 :hover, .column7 :hover, .column8 :hover{
+  background-color: #ccd735;
+  transition: 0.5s ease;
+}
+
+.articolo1 {
+  border-radius: 15px;
+  border: 5px solid #266b2f;
+  background-color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 33px 32px;
+}
+
+.img6 {
+  aspect-ratio: 1.09;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.titoletto4 a{
+  display: flex;
+  color: #266b2f;
+  align-self: stretch;
+  margin-top: 24px;
+  font: 600 25px/35px Gabarito, sans-serif;
+  text-decoration: none;
+}
+
+.div-5 {
+  color: #e84616;
+  align-self: stretch;
+  margin-top: 85px;
+  white-space: nowrap;
+  font: 400 20px/145% Gabarito, sans-serif;
+}
+
+.column7 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+}
+
+.articolo2 {
+  border-radius: 15px;
+  border: 5px solid #266b2f;
+  background-color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 33px 32px;
+}
+
+.titoletto5 a{
+  display: flex;
+  color: #266b2f;
+  align-self: stretch;
+  margin-top: 24px;
+  font: 600 25px/35px Gabarito, sans-serif;
+  text-decoration: none;
+}
+.div-7 {
+  color: #e84616;
+  align-self: stretch;
+  margin-top: 85px;
+  white-space: nowrap;
+  font: 400 20px/145% Gabarito, sans-serif;
+}
+
+.column8 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+}
+
+.articolo3 {
+  border-radius: 15px;
+  border: 5px solid #266b2f;
+  background-color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 33px 32px;
+}
+
+.titoletto6 a{
+  display: flex;
+  color: #266b2f;
+  align-self: stretch;
+  margin-top: 24px;
+  font: 600 25px/35px Gabarito, sans-serif;
+  text-decoration: none;
+}
+.div-9 {
+  color: #e84616;
+  align-self: stretch;
+  margin-top: 85px;
+  white-space: nowrap;
+  font: 400 20px/145% Gabarito, sans-serif;
+}
+  
+/*footer*/
+.footer {
+background-color: rgb(232, 70, 22);
+display: flex;
+max-width: 100vw;
+flex-direction: column;
+padding: 2% 5%;
+}
+
+.cookies {
+display: flex;
+color: #fff;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.privacy_policy {
+display: flex; 
+color: #fff;
+margin-top: 1%;
+white-space: nowrap;
+font: 500 20px/30px Gabarito, sans-serif;
+}
+
+.condizioni {
+display: flex;
+color: #fff;
+margin-top: 1%;
+font: 500 20px/30px Gabarito, sans-serif;
+justify-content: space-between;
+}
+      

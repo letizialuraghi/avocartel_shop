@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Gamberi in salsa di avocado - Avocartel </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/marchiorosso.png">
+    <meta name="keywords" content="avocartel"/>
+    <meta name="author" content="Letizia Luraghi"/>
+    <link rel="stylesheet" type="text/css" href="04_blog_2_ricetta.css" title="default" />
+
+    <!--foglio di stile per la ricerca-->
+    <link rel="stylesheet" href="00_cerca.css" /> 
+    <!--codice javascript per la ricerca-->
+    <script src="00_cerca.js"></script>
+    </head>
+
+<header>
+<!--banner-->
+<div class="banner">
+  <div class="logo"> 
+  <a href="01_homepage.html"> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c15b6aaf15dca5fb63fc6de8d9704f34c00a61823835d50905ee405447d2d562?" style=" aspect-ratio: 1.16; object-fit: contain; object-position: left; width: 59px; overflow: hidden; max-width: 100%;"> </a> 
+  </div>
+
+  <div class="collegamenti">
+  <div class="bilancia"> <a href="02_bilancia.html"> LIBRE </a> </div> 
+  <div class="contest"> <a href="03_premi.html"> CONTEST </a> </div>
+  <div class="blog"> <a href=04_blog.html> BLOG </a> </div>
+  <div class="oltre"> <a href="05_oltre.html"> OLTRE </a> </div>
+  <div class="contatti"> <a href="06_about.html"> ABOUT </a> </div>  
+  </div>
+  
+  <div class="bottoni">
+  <!--area personale-->
+  <div class="but1_areapersonale">
+      <button onclick="mostraOverlay()" class="but1_areapersonale"> 
+      </button>
+  </div>
+
+  <div id="overlay"> 
+      <div class="modal-container" id="modal-container"> 
+          <div class="modal active" class="modal" id="modal"> 
+          <!-- la funzione nascondereOverlay è stata attribuita all’evento onclick del bottone con la x della newsletter -->
+          <button onclick="nascondereOverlay()"data-close-button class="close-btn" id="close">&times;</button>
+                  <div class="modal-content">
+                      <form action="">
+                          <input type="text" placeholder="Cerca">
+                          <button class="accedi"></button>
+                      </form>
+                  </div>
+          </div>
+      </div>
+  </div> 
+  </div>
+</div>
+</header>
+
+<body>
+<!--INTRODUZIONE-->
+<div class="sezione1">
+  <div class="introduzione">
+          <!--COLONNA1-FOTO-->
+          <div class="column">
+            <img loading="lazy" src="images/04_blog_ricetta2.avif" class="gamberi"/>
+          </div>
+
+          <!--COLONNA2-INGREDIENTI-->
+          <div class="column-2">
+            <div class="introduzione_2">
+              <!--TITOLO RICETTA-->
+              <div class="informazioni_gen">
+                  <div class="titolo"> Gamberi in salsa di avocado </div>
+                <div class="generalità">
+                  <div class="numero">N°2</div>
+                  <div class="testo">
+                    <span style="color: rgba(38, 107, 47, 1)">DIFFICOLTÁ</span> 
+                    <span style="color: rgba(232, 70, 22, 1)"> MEDIA</span>
+                    <span style="color: rgba(38, 107, 47, 1)">| TEMPO</span>
+                    <span style="color: rgba(231, 69, 22, 1)">15</span>
+                    <span style="color: rgba(232, 70, 22, 1)">MIN</span>
+                  </div>
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cbb1683054f4d0d1b9cef99ab170a66c23cace4dda9fe8310590bdc54154d6a?apiKey=e6ee02dbd8cf4f048a759491ecff9f56&"
+                    class="condividi"
+                  />
+                </div>
+              </div>
+              <!--INGREDIENTI-->
+              <div class="ingredienti">
+                <div class="titoletto">Ingredienti per 4 porzioni</div>
+                <div class="lista">
+                  <div class="introduzione">
+                    <div class="column-3">
+                      <div class="lista_1">
+                        <span style="color: rgba(38, 107, 47, 1)">Gamberoni:</span>
+                        <span style="color: rgba(232, 70, 22, 1)">20<br /> </span>
+                        <span style="color: rgba(38, 107, 47, 1)">Avocado maturi:</span>
+                        <span style="color: rgba(232, 70, 22, 1)">2<br /> </span>
+                        <span style="color: rgba(38, 107, 47, 1)"> Olio extravergine di oliva:</span>
+                        <span style="color: rgba(232, 69, 23, 1)">q.b.</span>
+                      </div>
+                    </div>
+
+                    <div class="column-4">
+                      <div class="lista_2">
+                        <span style="color: rgba(38, 107, 47, 1)">Formaggio cremoso:</span>
+                        <span style="color: rgba(231, 66, 24, 1)">150</span>
+                        <span style="color: rgba(232, 70, 22, 1)">gr<br /></span>
+                        <span style="color: rgba(38, 107, 47, 1)">Lime:</span>
+                        <span style="color: rgba(232, 70, 22, 1)">2-3<br /></span>
+                        <span style="color: rgba(38, 107, 47, 1)">Sale fino e pepe:</span>
+                        <span style="color: rgba(232, 69, 23, 1)">q.b.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+</div>
+
+<!--procedimento-->
+<div class="main-container">
+  <div class="preparazione_titolo">Preparazione</div>
+    <div class="columns">
+
+        <!--Prima colonna-->
+        <div class="column-5">
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_1.avif" class="img"/>
+                <div class="div-5"> 1. Sciacquate i gamberi, quindi privateli del carapace e del budello (tenetene da parte 4 con la testa per la decorazione finale).</div>
+              </div>
+
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_4.avif"class="img" />
+                <div class="div-5"> 4. Nel frattempo, tagliate in orizzontale gli avocado, rimuovete i noccioli e raccogliete la polpa con un cucchiaio in una ciotola. </div>
+              </div>
+
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_7.avif"class="img" />
+                <div class="div-5">7. Distribuite i gamberoni marinati all'interno di 4 bicchieri, tenendo da parte quelli con le teste.</div>
+              </div>
+        </div>
+
+        <!--Seconda colonna-->
+        <div class="column-6">
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_2.avif"class="img" />
+                <div class="div-5">2. Scottate i gamberi in acqua bollente per pochi minuti, facendo attenzione che non diventino molli, quindi scolateli con cura.</div>
+              </div>
+
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_5.avif"class="img" />
+                <div class="div-5">5. Spremete il secondo lime e versate a mano a mano il succo nella polpa, insieme a sale, olio e pepe e schiacciate con un cucchiaio.</div>
+              </div>
+
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_8.avif"class="img" />
+                <div class="div-5">8. Raccogliete la salsa di avocado in un sac à poche e realizzate sui gamberi dei ciuffetti.</div>
+              </div>
+        </div>
+
+        <!--Terza colonna-->
+        <div class="column-7">
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_3.avif"class="img" />
+                <div class="div-5">3. Raccoglieteli in una ciotola e conditeli con il succo di 1 lime, un goccio di olio e una macinata di pepe. Lasciate marinare per 30 minuti.</div>
+              </div>
+
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_6.avif"class="img" />
+                <div class="div-5">6. Aggiungete infine il formaggio cremoso spalmabile e incorporatelo perfettamente continuando ad amalgamare.</div>
+              </div>
+
+              <div class="div-3">
+                <img loading="lazy" src="images/ricetta2_gamberi_9.avif"class="img" />
+                <div class="div-5">9. Completate con l'ultimo gambero, una fettina di lime e un rametto di finocchietto selvatico a piacere.</div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<!--INDICAZIONI FINALI-->
+<div class="main-container_2">
+  <div class="conservazione_titolo">Conservazione</div>
+  <div class="testo_2"> I gamberi con salsa avocado e lime possono essere conservati in frigorifero, coperti in superficie con un foglio di pellicola trasparente, per 1 giorno. </div>
+
+  <div class="conservazione_titolo">Consigli</div>
+  <div class="testo_2"> Per un risultato impeccabile, assicuratevi che i gamberi siano freschissimi e di ottima qualità; in loro sostituzione, per una versione ancora più raffinata, potete usare gli scampi. </div>
+</div>
+
+</body>
+
+<!--footer-->
+<footer>
+  <div class="footer">
+      <div class="cookies"> <a href="cookie_policy.html"> COOKIES </a> </div>
+      <div class="privacy_policy"> <a href="privacy_policy.html"> PRIVACY POLICY </a> </div>
+      <div class="condizioni"> <a href="condizioni.html"> CONDIZIONI D’USO</a> <a href="https://www.instagram.com/avocartel_shop/" target=_blank> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9842b4f35005d088ef3d15859f820a844454bc150fb4d453806addb6a13718e9?" alt="instagram"  height="40px" width="40px"> </a> </div>
+  </div>    
+</footer>
+
+</html>

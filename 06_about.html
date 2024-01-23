@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Avocartel </title>
+    <link rel="icon" type="image/x-icon" href="images/marchiorosso.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Avocartel"/>
+    <meta name="author" content="Letizia Luraghi"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link foglio di stile con cui appare il sito appena si apre-->
+    <link rel="stylesheet" type="text/css" href="06_about.css" title="default" />
+
+    <!--foglio di stile per la ricerca-->
+    <link rel="stylesheet" href="00_cerca.css" /> 
+    <!--codice javascript per la ricerca-->
+    <script src="00_cerca.js"></script>
+
+    <!--foglio di stile per il carosello-->
+    <link rel="stylesheet" href="00_carosello.css" /> 
+
+    </head>
+
+<header>
+<!--banner-->
+<div class="banner">
+    <div class="logo"> 
+    <a href="01_homepage.html"> 
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c15b6aaf15dca5fb63fc6de8d9704f34c00a61823835d50905ee405447d2d562?" style=" aspect-ratio: 1.16; object-fit: contain; object-position: left; width: 59px; overflow: hidden; max-width: 100%;"> </a> 
+    </div>
+
+    <div class="collegamenti">
+    <div class="bilancia"> <a href="02_bilancia.html"> LIBRE </a> </div> 
+    <div class="contest"> <a href="03_premi.html"> CONTEST </a> </div>
+    <div class="blog"> <a href=04_blog.html> BLOG </a> </div>
+    <div class="oltre"> <a href="05_oltre.html"> OLTRE </a> </div>
+    <div class="contatti"> <a href="06_about.html"> ABOUT </a> </div>  
+    </div>
+    
+    <div class="bottoni">
+    <!--area personale-->
+    <div class="but1_areapersonale">
+        <button onclick="mostraOverlay()" class="but1_areapersonale"> 
+        </button>
+    </div>
+
+    <div id="overlay"> 
+        <div class="modal-container" id="modal-container"> 
+            <div class="modal active" class="modal" id="modal"> 
+            <!-- la funzione nascondereOverlay è stata attribuita all’evento onclick del bottone con la x della newsletter -->
+            <button onclick="nascondereOverlay()"data-close-button class="close-btn" id="close">&times;</button>
+                    <div class="modal-content">
+                        <form action="areapersonale.html">
+                            <input type="text" placeholder="Cerca">
+                            <button class="accedi"></button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+</div>
+</header>
+
+<body>
+
+<!--CAROSELLO--> 
+<div class="carosello">
+        <div class="slide1"> <img src="images/06_sfondoabout.jpg" style="width:100%"> </div>
+        <div class="slide1"> <img src="Images/06_sfondoabout2.jpg" style="width:100%"> </div>
+        <div class="slide1"> <img src="Images/06_sfondoabout3.jpg" style="width:100%"> </div>
+        <div class="slide1"> <img src="Images/06_sfondoabout4.jpg" style="width:100%"> </div>
+
+    <a class="prec" onclick="cambiaSlide(-1, 0)">&#10094;
+    </a>
+    <a class="succ" onclick="cambiaSlide(1, 0)">&#10095;
+    </a>
+    <!--codice javascript carosello-->
+    <script src="00_carosello.js"></script>
+</div>
+
+<!--CONTATTI--> 
+<div class="contatti2">
+    <div class="column">
+        <div class="testi1">
+          <div class="contattaci_titolo">contattaci</div>
+          <div class="testo1">
+            La nostra assistenza è attiva
+            <span style="font-weight: 800">telefonicamente</span>
+            <span style="font-weight: 800">dal lunedì al venerdì</span>
+            <span style="font-weight: 800">dalle 9.00 alle 18.00,</span>
+            mentre
+            <span style="font-weight: 800">via mail</span>
+            siamo
+            <span style="font-weight: 800">sempre attivi.</span>
+            <br />
+            <br />
+            <span style="font-weight: 800">+39 3827 293 283 27364</span>
+            <br />
+            <span style="font-weight: 800">avocartel@gmail.com</span>
+          </div>
+        </div>
+    </div>
+
+    <div class="column-2">
+        <div class="testi2">
+          <div class="testo2">
+            <span style="font-weight: 800; color: rgba(38, 107, 47, 1)">
+              Sede - Messico
+            </span>
+            <br />
+            Isla Avocado, Michoàcan, 61616
+            <br />
+            <br />
+            <span style="font-weight: 800; color: rgba(38, 107, 47, 1)">
+              Sede - Italia
+            </span>
+            <br />
+            Via Torino 54, Milano, 20158
+            <br />
+            <br />
+            <span style="font-weight: 800; color: rgba(38, 107, 47, 1)">
+              Sede Fiscale
+            </span>
+            <br />
+            Isla Avocado, Michoàcan, Messico 61616
+          </div>
+           <!--BOTTONE--> 
+          <div class="bottone1"> <a href="https://www.google.it/maps/place/61616+Isla+de+Tecuena,+Michoac%C3%A1n,+Messico/@19.5866783,-101.6511964,18z/data=!3m1!4b1!4m6!3m5!1s0x842dbe30b8d783a1:0xa7e41778d8265657!8m2!3d19.5859241!4d-101.6506415!16s%2Fg%2F11csp81qm7?entry=ttu" target="_blank"> APRI LA MAPPA </a> </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<!--footer-->
+<footer>
+    <div class="footer">
+        <div class="cookies"> <a href="cookie_policy.html"> COOKIES </a> </div>
+        <div class="privacy_policy"> <a href="privacy_policy.html"> PRIVACY POLICY </a> </div>
+        <div class="condizioni"> <a href="condizioni.html"> CONDIZIONI D’USO</a> <a href="https://www.instagram.com/avocartel_shop/" target=_blank> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9842b4f35005d088ef3d15859f820a844454bc150fb4d453806addb6a13718e9?" alt="instagram"  height="40px" width="40px"> </a> </div>
+    </div>    
+</footer>
+
+<html>

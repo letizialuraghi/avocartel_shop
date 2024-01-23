@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Avocartel </title>
+    <link rel="icon" type="image/x-icon" href="images/marchiorosso.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Avocartel"/>
+    <meta name="author" content="Letizia Luraghi"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link foglio di stile con cui appare il sito appena si apre-->
+    <link rel="stylesheet" type="text/css" href="01_homepage.css" title="default" />
+
+    <!--foglio di stile per la ricerca-->
+    <link rel="stylesheet" href="00_cerca.css" /> 
+    <!--codice javascript per la ricerca-->
+    <script src="00_cerca.js"></script>
+
+    <!--foglio di stile per il carosello-->
+    <link rel="stylesheet" href="00_carosello.css" /> 
+
+    </head>
+
+<header>
+<!--banner-->
+<div class="banner">
+    <div class="logo"> 
+    <a href="01_homepage.html"> 
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c15b6aaf15dca5fb63fc6de8d9704f34c00a61823835d50905ee405447d2d562?" style=" aspect-ratio: 1.16; object-fit: contain; object-position: left; width: 59px; overflow: hidden; max-width: 100%;"> </a> 
+    </div>
+
+    <div class="collegamenti">
+    <div class="bilancia"> <a href="02_bilancia.html"> LIBRE </a> </div> 
+    <div class="contest"> <a href="03_premi.html"> CONTEST </a> </div>
+    <div class="blog"> <a href=04_blog.html> BLOG </a> </div>
+    <div class="oltre"> <a href="05_oltre.html"> OLTRE </a> </div>
+    <div class="contatti"> <a href="06_about.html"> ABOUT </a> </div>  
+    </div>
+    
+    <div class="bottoni">
+    <!--area personale-->
+    <div class="but1_areapersonale">
+        <button onclick="mostraOverlay()" class="but1_areapersonale"> 
+        </button>
+    </div>
+
+    <div id="overlay"> 
+        <div class="modal-container" id="modal-container"> 
+            <div class="modal active" class="modal" id="modal"> 
+            <!-- la funzione nascondereOverlay è stata attribuita all’evento onclick del bottone con la x della newsletter -->
+            <button onclick="nascondereOverlay()"data-close-button class="close-btn" id="close">&times;</button>
+                    <div class="modal-content">
+                        <form action="areapersonale.html">
+                            <input type="text" placeholder="Cerca">
+                            <button class="accedi"></button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+</div>
+</header>
+
+<body>
+<!--CAROSELLO--> 
+<div class="carosello">
+        <div class="slide1"> <img src="Images/01_sfondohome.jpg" style="width:100%"> </div>
+        <div class="slide1"> <img src="Images/01_sfondohome2.jpg" style="width:100%"> </div>
+        <div class="slide1"> <img src="Images/01_sfondohome3.jpg" style="width:100%"> </div>
+        <div class="slide1"> <img src="Images/01_sfondohome4.jpg" style="width:100%"> </div>
+
+    <a class="prec" onclick="cambiaSlide(-1, 0)">&#10094;
+    </a>
+    <a class="succ" onclick="cambiaSlide(1, 0)">&#10095;
+    </a>
+    <!--codice javascript carosello-->
+    <script src="00_carosello.js"></script>
+</div>
+
+<!--LIBRE-->
+<div class="libre1">
+    <div class="div-1">
+        <div class="column1">
+            <div class="testo1">
+            Perchè considerare solo il peso fisico quando si può vedere anche il
+            peso sociale dei propri acquisti?
+            <br />
+            Ecco perchè Avocartel ha pensato ad una bilancia unica e speciale:
+            scoprila anche tu nella nostra sezione dedicata!
+            </div>
+            <div class="bottone1"> <a href="02_bilancia.html"> BILANCIA LIBRE </a> </div>
+        </div>
+
+        <div class="column2">
+            <div class="titoletto1">pesa i tuoi acquisti</div>
+        </div>
+    </div>
+</div>
+
+<!--CONTEST-->
+<div class="contest1">
+    <div class="div-2">
+        <div class="column3">
+            <div class="titoletto2">mettiti alla prova</div>
+        </div>
+
+        <div class="column4">
+            <div class="testo2">
+                Più acquisti, più puoi vincere! 
+                <br />
+                Non perdere l’opportunità unica di vincere una delle nostre totebag esclusive: 
+                prova a vincere il Dorado Contest 2028! Scopri di più nella sezione dedicata!
+                </div>
+                <div class="bottone2"> <a href="03_premi.html"> DORADO CONTEST </a> </div>
+        </div>
+    </div>
+</div>
+
+<!--BLOG-->
+<div class="blog1">
+    <div class="div-3">
+        <div class="column5">
+            <div class="testo3">
+            Si può sempre imparare qualcosa di nuovo! 
+            <br />
+            Il nostro sito offre tantissime ricette gustose a base di avocado e un sacco 
+            <br />
+            di articoli curiosi che non avresti
+            <br />
+            mai immaginato. 
+            <br />
+            Dai un’occhiata al nostro blog.
+            </div>
+            <div class="bottone3"> <a href="04_blog.html"> BLOG </a> </div>
+        </div>
+
+        <div class="column6">
+            <div class="titoletto3">scopri qualcosa <br /> in più</div>
+        </div>
+    </div>
+</div>
+
+<!--OLTRE-->
+<div class="oltre1">
+    <div class="div-4">
+        <div class="column7">
+            <div class="titoletto4">e tu? cosa puoi fare?</div>
+        </div>
+
+        <div class="column8">
+            <div class="testo4">
+                Dietro avocartel, in realtà, c'è un mondo! Vogliamo che tu conosca nel dettaglio la tua impronta sociale anche al di fuori del nostro pop-up store. 
+                Visita la sezione Oltre per saperne di più! 
+                </div>
+                <div class="bottone4"> <a href="05_oltre.html"> OLTRE AVOCARTEL </a> </div>
+        </div>
+    </div>
+</div>
+
+<!--ABOUT-->
+<div class="about1">
+    <div class="div-5">
+        <div class="column9">
+            <div class="testo5">
+                Avocartel è una realtà ben molto più interessante di come si vede in superficie! 
+                Vi invitiamo ad immergervi nelle lontane e floride terre messicane, da cui provengono i nostri incredibili avocado.
+            </div>
+            <div class="bottone5"> <a href="06_about.html" target="_blank"> ABOUT </a> </div>
+        </div>
+
+        <div class="column10">
+            <div class="titoletto5"> conoscici meglio </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<!--footer-->
+<footer>
+    <div class="footer">
+        <div class="cookies"> <a href="cookie_policy.html"> COOKIES </a> </div>
+        <div class="privacy_policy"> <a href="privacy_policy.html"> PRIVACY POLICY </a> </div>
+        <div class="condizioni"> <a href="condizioni.html"> CONDIZIONI D’USO</a> <a href="https://www.instagram.com/avocartel_shop/" target=_blank> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9842b4f35005d088ef3d15859f820a844454bc150fb4d453806addb6a13718e9?" alt="instagram"  height="40px" width="40px"> </a> </div>
+    </div>    
+</footer>
+
+<html>
